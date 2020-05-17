@@ -4,7 +4,7 @@ pipeline {
     stage('Build') {
       steps {
         sh '''pwd
-ansible linux -m ping'''
+ansible linux -m ping -u benny --become'''
       }
     }
 
