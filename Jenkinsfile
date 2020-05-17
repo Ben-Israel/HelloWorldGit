@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'ps -aux'
+        sh 'ls -alh'
       }
     }
 
