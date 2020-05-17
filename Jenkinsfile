@@ -4,8 +4,7 @@ pipeline {
     stage('Build') {
       steps {
         sh '''pwd
-ls -alh
-ansible linux -m ping -u benny --become'''
+ansible linux -m ping -u jenkins --become --become-user benny'''
       }
     }
 
